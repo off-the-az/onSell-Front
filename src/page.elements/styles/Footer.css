@@ -1,0 +1,19 @@
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-nav li {
+  margin: 0 20px;
+  color: white;
+  font-size: 18px;
+  font-family: Intro Demo;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+
+.footer-img {
+  width: 60px;
+}
