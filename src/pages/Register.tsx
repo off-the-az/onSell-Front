@@ -1,13 +1,5 @@
-import IconButton from "@mui/material/IconButton";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import PageTemplate from "../Page.template";
 import "./styles/Auth.css";
-import { Box, Button, Input, TextField } from "@mui/material";
 import React, { FormEvent } from "react";
 import { Link } from "react-router-dom";
 
@@ -16,7 +8,7 @@ export default function Register() {
   const [mail, setMail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [confirmedPassword, setConfirmedPassword] = React.useState("");
-  const [showPassword, setShowPassword] = React.useState(false);
+  /*const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -24,7 +16,7 @@ export default function Register() {
     event: React.MouseEvent<HTMLInputElement>
   ) => {
     event.preventDefault();
-  };
+  };*/
 
   const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value);
@@ -68,13 +60,13 @@ export default function Register() {
               onChange={handleMailChange}
             />
             <input
-              type={showPassword ? "text" : "password"}
+              //type={showPassword ? "text" : "password"}
               placeholder="Пароль"
               value={password}
               onChange={handlePasswordChange}
             />
             <input
-              type={showPassword ? "text" : "password"}
+              //type={showPassword ? "text" : "password"}
               placeholder="Повторити пароль"
               value={confirmedPassword}
               onChange={handleConfirmedPasswordChange}

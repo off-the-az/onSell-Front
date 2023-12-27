@@ -1,4 +1,3 @@
-import React from 'react';
 import PageTemplate from '../Page.template';
 
 export default function AddItems (){

@@ -1,14 +1,13 @@
-import PageTemplate from "../Page.template";
-import "./styles/Auth.css";
 import React, { FormEvent } from "react";
-import { Link, redirect } from "react-router-dom";
+import PageTemplate from "../../Page.template";
+import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function AddGame() {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
-  //const [showPassword, setShowPassword] = React.useState(false);
+  /*const [showPassword, setShowPassword] = React.useState(false);
 
-  /*const handleClickShowPassword = () => setShowPassword((show) => !show);
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   const handleMouseDownPassword = (
     event: React.MouseEvent<HTMLInputElement>
@@ -28,13 +27,12 @@ export default function Login() {
     event.preventDefault();
     console.log("Username:", username);
     console.log("Password:", password);
-    redirect("/");
   };
   return (
     <PageTemplate
       props={
         <div className="auth-block">
-          <h1 className="header">АВТОРИЗАЦІЯ</h1>
+          <h1 className="header">НОВА ГРА</h1>
           <form onSubmit={handleSubmit} className="auth-form">
             <input
               required={true}

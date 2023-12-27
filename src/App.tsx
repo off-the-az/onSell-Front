@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Error404 from "./pages/Error404";
 import Error403 from "./pages/Error403";
 import Error401 from "./pages/Error401";
@@ -13,6 +13,7 @@ import AddItems from "./pages/AddItems";
 import Chats from "./pages/Chats";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import AddGame from "./pages/admin/AddGame";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/admin" element={<Error401 />} />
+      <Route path="/admin/addGame" element={<AddGame />} />
       <Route path="/*" element={<Error404 />} />
     </Routes>
   );

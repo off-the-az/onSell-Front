@@ -32,7 +32,7 @@ export default function Items() {
           </div>
           <div className="catalogue-grid">
             <div className="game-block">
-              <Link to="/items/1">
+              <Link to="/items/valorant">
                 <div className="game-image">
                   <img src={TestGame} alt="logo" />
                 </div>
