@@ -11,6 +11,8 @@ import ItemInfo from "./pages/ItemInfo";
 import ItemsByCategory from "./pages/ItemsByCategory";
 import AddItems from "./pages/AddItems";
 import Chats from "./pages/Chats";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/wallet" element={<Error403 />} />
       <Route path="/support" element={<Error403 />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/admin" element={<Error401 />} />
       <Route path="/*" element={<Error404 />} />
     </Routes>

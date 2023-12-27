@@ -1,0 +1,123 @@
+.auth-block {
+  width: clamp(50px, 70%, 95%);
+  height: 95%;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-block > .header {
+  color: #fff;
+  font-family: Intro Demo;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  flex-shrink: 0;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: Intro Demo;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 28px;
+  width: clamp(150px, 70%, 1000rem);
+
+  & .password-in-group {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+
+  & input {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+    height: 20px;
+    margin: 10px 0;
+    font-size: 18px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & span {
+    border-radius: 15px;
+    width: 50px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    position: relative;
+    left: -50px;
+
+    & > .icon {
+      width: 50%;
+      height: 50%;
+      color: #000;
+    }
+  }
+
+  & .button-con {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+    & button {
+      width: clamp(150px, 300px, 450px);
+      height: 100px;
+      border: none;
+      border-radius: 15px;
+      padding: 13px;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: normal;
+      color: #fff;
+      font-family: Intro Demo;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      border-radius: 14px;
+      background: linear-gradient(91deg, #22c2ff 0%, #f900fe 100%);
+      box-shadow: 4px 6px 21px 0px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    & p {
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 100%;
+
+      & a {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+  }
+}

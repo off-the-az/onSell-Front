@@ -1,20 +1,20 @@
 .nav-links {
-  list-style: none;
-  padding: 20px 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .nav-btn {
-  margin: 17px 40px;
+  margin: clamp(10px, 12px, 17px) 20px;
   opacity: 100%;
 }
 
 .nav-btn img {
-  width: 70px;
+  width: clamp(45px, 60px, 70px);
 }
 
 .large-btn {
@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: clamp(10px, 12px, 17px) 20px;
 }
 
 .large-btn .wallet-btn {
@@ -42,13 +43,12 @@
 }
 
 .social-panel {
-  width: 170px;
+  width: 90%;
   height: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 10px;
+  margin: 10px 0;
 }
 
 .social-panel-btn img {
@@ -56,16 +56,16 @@
 }
 
 .twitter-icn img {
-  width: 45px;
-  height: 45px;
+  width: clamp(25px, 45px, 55px);
+  height: clamp(25px, 45px, 55px);
 }
 .instagram-icn img {
-  width: 40px;
-  height: 40px;
+  width: clamp(20px, 40px, 50px);
+  height: clamp(20px, 40px, 50px);
 }
 .telegram-icn img {
-  width: 35px;
-  height: 35px;
+  width: clamp(15px, 35px, 45px);
+  height: clamp(15px, 35px, 45px);
 }
 
 hr {
@@ -155,3 +155,62 @@ hr {
   border: 24px rgba(255, 255, 255, 0.28) solid;
 }
 */
+
+/* CSS Media Queries для адаптивного дизайну на мінімальному розширенні екрану 1024x768 */
+@media screen and (max-width: 773px) and (max-height: 609px) {
+  .nav-btn {
+    margin: clamp(8px, 10px, 14px) 15px; /* Адаптивні відступи */
+    opacity: 80%; /* Адаптивна прозорість */
+    /* Інші адаптивні стилі для .nav-btn */
+  }
+
+  .nav-btn img {
+    width: clamp(25px, 50px, 60px); /* Адаптивна ширина зображення */
+    height: clamp(25px, 50px, 60px); /* Адаптивна висота зображення */
+    /* Інші адаптивні стилі для .nav-btn img */
+  }
+
+  .large-btn {
+    height: auto; /* Адаптивна висота */
+    /* Інші адаптивні стилі для .large-btn */
+  }
+
+  .large-btn .wallet-btn {
+    /* Ваші стилі для .wallet-btn */
+  }
+
+  .social-panel {
+    width: 80%; /* Адаптивна ширина */
+    /* Інші адаптивні стилі для .social-panel */
+  }
+
+  .social-panel-btn img {
+    margin: 0 5px; /* Адаптивні відступи */
+    /* Інші адаптивні стилі для .social-panel-btn img */
+  }
+
+  .twitter-icn img {
+    width: clamp(20px, 40px, 50px); /* Адаптивна ширина зображення */
+    height: clamp(20px, 40px, 50px); /* Адаптивна висота зображення */
+    /* Інші адаптивні стилі для .twitter-icn img */
+  }
+
+  .instagram-icn img {
+    width: clamp(15px, 35px, 45px); /* Адаптивна ширина зображення */
+    height: clamp(15px, 35px, 45px); /* Адаптивна висота зображення */
+    /* Інші адаптивні стилі для .instagram-icn img */
+  }
+
+  .telegram-icn img {
+    width: clamp(10px, 30px, 40px); /* Адаптивна ширина зображення */
+    height: clamp(10px, 30px, 40px); /* Адаптивна висота зображення */
+    /* Інші адаптивні стилі для .telegram-icn img */
+  }
+
+  hr {
+    width: 6rem; /* Адаптивна ширина */
+    /* Інші адаптивні стилі для hr */
+  }
+
+  /* Додаткові адаптивні стилі для інших класів, які ви маєте */
+}
